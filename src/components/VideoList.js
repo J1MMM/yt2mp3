@@ -6,7 +6,7 @@ export default function VideoList(props){
     const navigate = useNavigate();
     function videoClicked(videoDataSelected){
         props.handleClick(videoDataSelected);
-        navigate(`/results/${videoDataSelected.id.videoId}`)
+        navigate(`/yt2mp3/results/${videoDataSelected.id.videoId}`)
     }
 
     const videoElements = props.videoData.map(data =>{

@@ -12,7 +12,7 @@ export default function VideoPlayer(props){
     const videoListElements = props.allVideoData.videoMetaInfo.map(data=>{
         function videoClicked(data){
             props.handleClick(data)
-            navigate(`/results/${data.id.videoId}`)
+            navigate(`/yt2mp3/results/${data.id.videoId}`)
         }
 
         return(

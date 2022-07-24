@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import '../style/Header.css'
 import {Link, useNavigate} from 'react-router-dom'
 import logo from './images/logo.png'
-import home from './images/home.ico'
 import Searchbar from "./Searchbar";
 import searchIcon from './images/search-icon.png'
 
@@ -22,13 +21,13 @@ export default function Header(props){
         }else{
             event.preventDefault();
             props.handleSearch(state.title);
-            navigate('/results')
+            navigate('/yt2mp3/results')
         }
     }
         return (
             <nav className="Header">
                 <div className="nav-controll">
-                    <Link className="links" to='/home'>
+                    <Link className="links" to='/yt2mp3/home'>
                         <img src={logo} alt='' />
                     </Link>
                     {props.show && <div className="searchbar">

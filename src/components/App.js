@@ -48,10 +48,10 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage onSearch={onSearch} />} />
-        <Route path="/home" element={<HomePage onSearch={onSearch} />} />
-        <Route path="/results" element={<SearchResult onSearch={onSearch} videoData={state.videoMetaInfo} handleClick={handleClick} show={show}/>} />
-        <Route path="/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state} show={show} onSearch={onSearch}/> } />
+        <Route path="/yt2mp3" element={<HomePage onSearch={onSearch} />} />
+        <Route path="/yt2mp3/home" element={<HomePage onSearch={onSearch} />} />
+        <Route path="/yt2mp3/results" element={<SearchResult onSearch={onSearch} videoData={state.videoMetaInfo} handleClick={handleClick} show={show}/>} />
+        <Route path="/yt2mp3/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state} show={show} onSearch={onSearch}/> } />
         <Route path="*" element={<ErrorPage />}/>
       </Routes>
       <Footer />

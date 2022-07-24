@@ -20,7 +20,7 @@ export default function Search(props){
         }else{
             event.preventDefault();
             props.handleSearch(state.title);
-            navigate('/results')
+            navigate('/yt2mp3/results')
         }
     }
         return (
