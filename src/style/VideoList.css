@@ -6,9 +6,7 @@
     flex-wrap: wrap;
     font-family: var(--font-secondary);
     gap: 3rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    
 }
 .video-list-container{
     display: flex;

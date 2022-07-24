@@ -1,0 +1,5 @@
+@import './variables.css';
+
+.Homepage-container{
+    min-height: 120vh;
+}

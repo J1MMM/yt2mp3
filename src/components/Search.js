@@ -27,7 +27,7 @@ export default function Search(props){
             <section className="Search">
                <h1>YouTube To MP3 Converter</h1>
                <p>Find, watch and download YouTube videos</p>
-                {props.show && <Searchbar handleSubmit={handleSubmit} onSearchChange={onSearchChange} title={props.state} searchIcon={searchIcon}/>}
+                <Searchbar handleSubmit={handleSubmit} onSearchChange={onSearchChange} title={props.state} searchIcon={searchIcon}/>
             </section>
         )    
 }

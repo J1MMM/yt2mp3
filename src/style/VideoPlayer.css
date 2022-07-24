@@ -1,6 +1,8 @@
 .video-player-main-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .video-player-container{
@@ -13,10 +15,12 @@
 .video-items-container{
     display: flex;
     flex-direction: column;
+    width: 70%;
+
 }
 .video-player{
-    width: 960px;
-    height: 540px;
+    width: 100%;
+    height: 550px;
 }
 .video-items-container > p{
     font-weight: bold;
@@ -36,9 +40,12 @@
 
 
 .videoList-container{
-    margin: 1rem;
     display: flex;
     cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 95%;
+ 
 }
 .videoList-container img{
     width: 15rem;
@@ -58,4 +65,10 @@
 .videoList-container > div > p > span{
     font-size: smaller;
     line-height: 1rem;
+}
+.video-sidebar-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }

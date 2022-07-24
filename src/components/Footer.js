@@ -10,7 +10,8 @@ export default function Footer(){
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontFamily: 'var(--font-secondary)'
+        fontFamily: 'var(--font-secondary)',
+        marginTop: "1rem"
 }
     return(
         <div style={style} className="Footer">

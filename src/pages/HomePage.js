@@ -1,12 +1,13 @@
 import React from 'react';
 import Search from '../components/Search'
-import '../style/App.css';
-
+import '../style/Homepage.css';
+import Header from '../components/Header'
 export default function HomePage(props) {
 
   return (
-    <div className="App">
-      <Search handleSearch={props.onSearch} show={props.show}/>
+    <div className="Homepage-container">
+      <Header />
+      <Search handleSearch={props.onSearch}/>
     </div>
   );
 }

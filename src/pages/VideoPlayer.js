@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/VideoPlayer.css'
 import { useParams, useNavigate } from 'react-router';
+import Header from '../components/Header';
 
 export default function VideoPlayer(props){
     let { id }= useParams();
@@ -27,6 +28,7 @@ export default function VideoPlayer(props){
 
     return (  
         <div className='video-player-main-container'>
+            <Header show={props.show} style={{width: "100%"}} handleSearch={props.onSearch} / >
             <div className='video-player-container'>
                 <div className='video-items-container'>
                     <iframe src={videoSrc} allowFullScreen title="Video player" className='video-player'/>

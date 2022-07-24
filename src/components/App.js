@@ -8,7 +8,7 @@ import Footer from './Footer';
 import Header from './Header';
 import VideoPlayer from '../pages/VideoPlayer';
 export default function App() {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   const [state, setState] = useState(
     {
       videoMetaInfo: [],
@@ -43,16 +43,15 @@ export default function App() {
         videoMetaInfo: response.data.items
       })
       )
-      setShow(true)
     }
     
   return (
     <Router>
-      <Header handleSearch={onSearch} show={show}/>
       <Routes>
-        <Route path="/" element={<HomePage onSearch={onSearch} show={!show}/>} />
-        <Route path="/results" element={<SearchResult videoData={state.videoMetaInfo} handleClick={handleClick}/>} />
-        <Route path="/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state}/> } />
+        <Route path="/" element={<HomePage onSearch={onSearch} />} />
+        <Route path="/home" element={<HomePage onSearch={onSearch} />} />
+        <Route path="/results" element={<SearchResult onSearch={onSearch} videoData={state.videoMetaInfo} handleClick={handleClick} show={show}/>} />
+        <Route path="/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state} show={show} onSearch={onSearch}/> } />
         <Route path="*" element={<ErrorPage />}/>
       </Routes>
       <Footer />

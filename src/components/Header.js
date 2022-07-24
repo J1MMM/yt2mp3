@@ -27,15 +27,14 @@ export default function Header(props){
     }
         return (
             <nav className="Header">
-                <Link className="links" to='/'>
-                    <img src={logo} alt='' />
-                </Link>
-                {props.show && <div className="searchbar">
-                    <Searchbar handleSubmit={handleSubmit} onSearchChange={onSearchChange} title={props.state} searchIcon={searchIcon}/>
-                </div>}
-                <Link className="links" to='/'>
-                    <img src={home} alt='' />
-                </Link>
+                <div className="nav-controll">
+                    <Link className="links" to='/home'>
+                        <img src={logo} alt='' />
+                    </Link>
+                    {props.show && <div className="searchbar">
+                        <Searchbar style={props.style} handleSubmit={handleSubmit} onSearchChange={onSearchChange} title={props.state} searchIcon={searchIcon}/>
+                    </div>}
+                </div>
             </nav>
         )
     }
