@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+:root{
+    /* Container width */
+--max-width: 100%;
+
+    /* Background colors */
+--bg-primary: #f8f8ff;
+--bg-secondary: #393e46;
+--bg-light: #dbd8e3;
+--bg-dark: #222831;
+
+    /* Text colors */
+--text-primary: #000105;
+--text-secondary: #f8f8ff;
+--text-light: #053f82;
+--text-dark:  #011447;
+
+    /* Fonts */
+--font-primary: 'Cabin', sans-serif;
+--font-secondary: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}

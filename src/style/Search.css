@@ -1,0 +1,56 @@
+@import './variables.css';
+
+.Search{
+    
+    background-color: var(--bg-dark);
+    color: var(--text-secondary);
+    display: flex;
+    width: var(--max-width);
+    height: 12rem;
+    flex-direction: column;
+    align-items: center;
+}
+.search-icon{
+    width: 21px;
+    
+}
+h1{
+    font-family: var(--font-secondary);
+    font-weight: 900;
+    font-size: 1.9rem;
+    line-height: 0ch;
+}
+p{
+    font-family: var(--font-secondary);
+    line-height: 0ch;
+    font-size: medium;
+    margin-bottom: 2rem;
+}
+form{
+    background-color: white;
+    width: 33rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+form > input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0 1rem;
+    font-size: large;
+}
+form > button {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}

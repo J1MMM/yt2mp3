@@ -1,0 +1,14 @@
+@import '/variable.css';
+
+.MainContent{
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: center;
+}
+.MainContent > div{
+    width: 80%;
+}
+.MainContent > div > h3{
+    font-size: 2.2ch;
+    font-weight: 900;
+}
