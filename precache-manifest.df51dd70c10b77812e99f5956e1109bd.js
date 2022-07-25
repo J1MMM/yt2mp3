@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/yt2mp3/static/js/runtime~main.0ac7c442.js"
   },
   {
-    "revision": "651940775d7e0cc236fda9c13a6f9a42",
+    "revision": "b566f21a1f5390aeffea579009cf0f7a",
     "url": "/yt2mp3/index.html"
   }
 ];
