@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6fcc916caaa26d37ebd9",
-    "url": "/yt2mp3/static/css/main.0a4feb96.chunk.css"
+    "revision": "82588edbe69d91ca5f02",
+    "url": "/yt2mp3/static/css/main.5f1a71fe.chunk.css"
   },
   {
-    "revision": "6fcc916caaa26d37ebd9",
-    "url": "/yt2mp3/static/js/main.6fcc916c.chunk.js"
+    "revision": "82588edbe69d91ca5f02",
+    "url": "/yt2mp3/static/js/main.82588edb.chunk.js"
   },
   {
     "revision": "87dd06f5dc47edc8092b",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/yt2mp3/static/js/runtime~main.0ac7c442.js"
   },
   {
-    "revision": "ea894c86a3cd304dce0c9f2d1bcaefba",
+    "revision": "885c200cfe4f41fda132075eee1dec1f",
     "url": "/yt2mp3/index.html"
   }
 ];
