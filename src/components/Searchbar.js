@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Searchbar(props) {
     return (
-            <form style={props.style} onSubmit={props.handleSubmit} action='/results'>
+            <form style={props.style} onSubmit={props.handleSubmit} className='form'>
                 <input 
                     placeholder="Search"
                     onChange={props.onSearchChange}

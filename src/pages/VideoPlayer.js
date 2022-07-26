@@ -33,9 +33,9 @@ export default function VideoPlayer(props){
                 <div className='video-items-container'>
                     <iframe src={videoSrc} allowFullScreen title="Video player" className='video-player'/>
                     <button>Download mp3</button>
-                    <h3>{props.allVideoData.videoTitle}</h3>
-                    <p>{props.allVideoData.videoChannel}</p>
-                    <small>{props.allVideoData.videoDescription}</small>
+                    <h3 className='title'>{props.allVideoData.videoTitle}</h3>
+                    <p className='channel'>{props.allVideoData.videoChannel}</p>
+                    <small className='description'>{props.allVideoData.videoDescription}</small>
                 </div>
                 <div className='video-sidebar-container'>
                     {videoListElements}

@@ -70,7 +70,7 @@
 }
 .videoList-container > div > p > span{
     font-size: smaller;
-    line-height: 1rem;
+    line-height: 2rem;
 }
 .video-sidebar-container{
     width: 40%;
@@ -79,6 +79,9 @@
     position: relative;
 }
 @media (max-width: 1024px) {
+    .video-player-container{
+        margin-top: .8rem;
+    }
     .video-items-container{
         width: 100%;
     }
@@ -111,5 +114,55 @@
         flex-direction: column;
         width: 90%;
 
+    }
+}
+@media (max-width: 480px) {
+    .video-player{
+        height: 12rem;
+    }
+
+    .video-items-container > button{
+        padding: .5rem;
+        width: 7rem;
+        margin-top: .5rem;
+        font-weight: 800;
+    }
+    .title{
+        font-size: medium;
+        margin-bottom: .5ch;
+        font-weight: 100;
+    }
+    .channel{
+        font-size: small;
+        font-weight: normal;
+        margin-bottom: 2ch;
+    }
+    .description{
+        font-size: x-small;
+    }
+    .video-player-main-container{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .video-sidebar-container{
+        width: 100%;
+    }
+    .videoList-container{
+        margin-top: 1rem;
+        margin-left: 0ch;
+        height: 5rem;
+        width: 100%;
+        margin-bottom: 0ch;
+        overflow: hidden;
+    }
+    .videoList-container img{
+        width: 10rem;
+        height: 5rem;
+    }
+    .videoList-container div{
+        margin-left: .5rem;
+    }
+    .videoList-container div h3{
+        font-size: small;
     }
 }

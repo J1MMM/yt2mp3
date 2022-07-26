@@ -26,7 +26,7 @@
 }
 .video-list-container div p{
     font-weight: 700;
-    line-height: 0ch;
+    line-height: 1.5ch;
     font-size: .9rem;
     cursor: pointer;
     margin-bottom: 1.5rem;
@@ -39,7 +39,7 @@
 }
 .video-list-container div small{
     font-weight: 100;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 0ch;
     cursor: text;
 
@@ -67,34 +67,32 @@
 }
 @media (max-width: 480px) {
     .video-list-main-container{
-        gap: 1rem;
+        gap: .5rem;
     }
     .video-list-container{
         width: 90%;
         height: 8rem;
     }
     .video-list-container div h3{
-        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
         font-size: small;
     }
+    .video-list-container div p{
+        font-size: .6rem;
+    }
     .video-list-container div span{
-        font-weight: 100;
-        font-size: .9rem;
-        line-height: 0ch;
-        cursor: text;
+        display: none;
     }
     .video-list-container div small{
-        font-weight: 100;
-        font-size: .5rem;
-        line-height: 0ch;
-        cursor: text;
+        display: none;
     
     }
     .video-list-container img{
         width: 10rem;
-        height: 8rem;
+        height: 6rem;
         margin: 0;
-        cursor: pointer;
         margin-right: 1rem;
     }
 }

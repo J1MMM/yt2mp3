@@ -37,8 +37,15 @@
         background-color: blue;
     }
 }
+*/
 @media (max-width: 480px) {
     .Header{
-        background-color: red;
+        height: 3.5rem;
     }
-} */
+    .nav-controll > .links > img{
+        width: 5rem;
+    }
+    .nav-controll > .links{
+        margin-left: .5rem;
+    }
+} 

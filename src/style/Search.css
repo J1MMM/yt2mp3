@@ -57,7 +57,23 @@ form > button {
     color: white;
 }
 @media (max-width: 480px) {
-    form{
-        height: 2rem;
+    .Search{
+        height: 8rem;
     }
+    h1{
+        font-size: larger;
+    }
+    p{
+        font-size: x-small;
+    }
+    form > input{
+        font-size: small;
+    }
+    form{
+        height: 1.5rem;
+        border: 1px solid white;
+        max-width: 10rem;
+        margin-right: .5rem;
+    }
+
 }
