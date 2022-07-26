@@ -1,7 +1,7 @@
 .footer-container{
     height: 3rem;
     flex-direction: column;
-    padding: 1rem;
+
 }
 .footer-items{
     display: flex;
