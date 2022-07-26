@@ -1,5 +1,11 @@
 @import './variables.css';
 
+:root{
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+}
 
 .Header{
     background-color: var(--bg-dark);
@@ -21,3 +27,18 @@
     align-items: center;
     position: relative;
 }
+/* @media (max-width: 1024px) {
+    .Header{
+        background-color: yellow;
+    }
+}
+@media (max-width: 768px) {
+    .Header{
+        background-color: blue;
+    }
+}
+@media (max-width: 480px) {
+    .Header{
+        background-color: red;
+    }
+} */
