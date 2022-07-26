@@ -1,0 +1,17 @@
+.footer-container{
+    height: 3rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+.footer-items{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.footer-items > a{
+    display: flex;
+}
+.footer-items > a > img{
+    width: 2rem;
+    filter: invert(1);
+}
