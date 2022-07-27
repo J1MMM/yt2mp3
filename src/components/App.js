@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import HomePage from '../pages/HomePage';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ErrorPage from '../pages/ErrorPage';
 import youtubeApi from '../api/youtube'
 import SearchResult from '../pages/SearchResult';
 import Footer from './Footer';
-import Header from './Header';
 import VideoPlayer from '../pages/VideoPlayer';
 export default function App() {
-  const [show, setShow] = useState(true)
+  const show = true;
+  const [videoSrc, setVideoSrc] = useState({id: []})
+  const [videoPlayList, setVideoPlayList] = useState({playlist: []})
   const [state, setState] = useState(
     {
       videoMetaInfo: [],
@@ -19,7 +20,9 @@ export default function App() {
       videoDescription: null,
     }
     )
+
     function handleClick(data){
+      setVideoSrc({id: data.id.videoId})
       setState(prevState=>(
         {
           ...prevState,
@@ -30,13 +33,13 @@ export default function App() {
         }
         ))
     }
+
     async function onSearch(keyword){  
       const response = await youtubeApi.get("/search", {
       params: {
         q: keyword
       }
     })
-    
     setState(prevState =>
       ({
         ...prevState,
@@ -45,13 +48,28 @@ export default function App() {
       )
     }
     
+    async function getVideoList(){
+        const list = await youtubeApi.get("/playlistItems",{
+        params: {
+          playlistId: 'PL6k9a6aYB2zk0qSbXR-ZEiwqgdHymsRtQ'
+          }
+        })
+        setVideoPlayList(prev =>
+          ({
+            playlist: list.data.items
+          }))
+      }
+
+      useEffect(()=>{
+        getVideoList();
+      }, [0])
   return (
     <Router>
       <Routes>
-        <Route path="/yt2mp3" element={<HomePage onSearch={onSearch} />} />
-        <Route path="/yt2mp3/home" element={<HomePage onSearch={onSearch} />} />
+        <Route path="/yt2mp3" element={<HomePage videoPlayList={videoPlayList.playlist} onSearch={onSearch} handleClick={handleClick}/>} />
+        <Route path="/yt2mp3/home" element={<HomePage videoPlayList={videoPlayList.playlist} onSearch={onSearch} handleClick={handleClick} />} />
         <Route path="/yt2mp3/results" element={<SearchResult onSearch={onSearch} videoData={state.videoMetaInfo} handleClick={handleClick} show={show}/>} />
-        <Route path="/yt2mp3/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state} show={show} onSearch={onSearch}/> } />
+        <Route path="/yt2mp3/results/:id" element={<VideoPlayer  handleClick={handleClick} allVideoData={state} show={show} onSearch={onSearch} videoSrc={videoSrc} videoPlayList={videoPlayList.playlist}/> } />
         <Route path="*" element={<ErrorPage />}/>
       </Routes>
       <Footer />

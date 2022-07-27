@@ -11,7 +11,6 @@ export default function Search(props){
     function onSearchChange(event){
         const {value} = event.target
         setState({title: value})
-        console.log(state.title)
     }
 
     function handleSubmit(event){

@@ -7,7 +7,6 @@
     font-family: var(--font-secondary);
     gap: 3rem;
     align-items: center;
-    
 }
 .video-list-container{
     display: flex;

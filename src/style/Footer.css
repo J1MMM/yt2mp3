@@ -1,5 +1,5 @@
 .footer-container{
-    height: 3rem;
+    height: 5rem;
     flex-direction: column;
 
 }
@@ -14,4 +14,15 @@
 .footer-items > a > img{
     width: 2rem;
     filter: invert(1);
+}
+@media (max-width: 480px) {
+    .footer-container{
+        height: 5rem;
+    }
+    .footer-items{
+        gap: .5rem;
+    }
+    .footer-items > a > img{
+        width: 1rem;
+    }
 }

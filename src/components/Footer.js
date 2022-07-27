@@ -15,14 +15,14 @@ export default function Footer(){
     return(
         <div style={style} className="footer-container">
             <div className="footer-items">
-                <a href="https://www.facebook.com/jimuel.baraero" target='_blank'>
-                <img src='https://cdn-icons-png.flaticon.com/512/20/20673.png' atl='' />
+                <a  href="https://www.facebook.com/jimuel.baraero" target='_blank' rel="noopener noreferrer">
+                <img src='https://cdn-icons-png.flaticon.com/512/20/20673.png' alt='' />
                 </a>
-                <a href="https://github.com/J1MMM" target='_blank'>
-                <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' atl='' />
+                <a  href="https://github.com/J1MMM" target='_blank' rel="noopener noreferrer">
+                <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt='' />
                 </a>
-                <a href="https://www.linkedin.com/in/jimuel-baraero-b49628243" target='_blank'>
-                <img src='https://cdn-icons-png.flaticon.com/512/61/61109.png' atl='' />
+                <a  href="https://www.linkedin.com/in/jimuel-baraero-b49628243" target='_blank' rel="noopener noreferrer">
+                <img src='https://cdn-icons-png.flaticon.com/512/61/61109.png' alt='' />
                 </a>
             </div>
         </div>

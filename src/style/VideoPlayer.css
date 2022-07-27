@@ -12,6 +12,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .video-player-container{
     display: flex;

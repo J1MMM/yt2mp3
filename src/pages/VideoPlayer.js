@@ -4,15 +4,15 @@ import { useParams, useNavigate } from 'react-router';
 import Header from '../components/Header';
 
 export default function VideoPlayer(props){
+    const list = props.allVideoData.videoMetaInfo.length === 0 ? props.videoPlayList : props.allVideoData.videoMetaInfo 
+
     let { id }= useParams();
     const navigate= useNavigate();
     const videoSrc = `https://www.youtube.com/embed/${id}`;
-    console.log(props.allVideoData.videoMetaInfo)
-    
-    const videoListElements = props.allVideoData.videoMetaInfo.map(data=>{
+    const videoListElements = list.map(data=>{
         function videoClicked(data){
             props.handleClick(data)
-            navigate(`/yt2mp3/results/${data.id.videoId}`)
+            navigate(`/yt2mp3/results/${props.allVideoData.videoMetaInfo.length === 0 ? data.snippet.resourceId.videoId : data.id.videoId}`)
         }
 
         return(
@@ -31,7 +31,7 @@ export default function VideoPlayer(props){
             <Header show={props.show} style={{width: "100%"}} handleSearch={props.onSearch} / >
             <div className='video-player-container'>
                 <div className='video-items-container'>
-                    <iframe src={videoSrc} allowFullScreen title="Video player" className='video-player'/>
+                    <iframe src={videoSrc || props.videoSrc} allowFullScreen title="Video player" className='video-player'/>
                     <button>Download mp3</button>
                     <h3 className='title'>{props.allVideoData.videoTitle}</h3>
                     <p className='channel'>{props.allVideoData.videoChannel}</p>
