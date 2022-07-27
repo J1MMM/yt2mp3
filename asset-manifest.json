@@ -1,13 +1,13 @@
 {
-  "main.css": "/yt2mp3/static/css/main.5981bc20.chunk.css",
-  "main.js": "/yt2mp3/static/js/main.198a2cb0.chunk.js",
-  "main.js.map": "/yt2mp3/static/js/main.198a2cb0.chunk.js.map",
-  "static/js/1.87dd06f5.chunk.js": "/yt2mp3/static/js/1.87dd06f5.chunk.js",
-  "static/js/1.87dd06f5.chunk.js.map": "/yt2mp3/static/js/1.87dd06f5.chunk.js.map",
+  "main.css": "/yt2mp3/static/css/main.b6480516.chunk.css",
+  "main.js": "/yt2mp3/static/js/main.aa3deec5.chunk.js",
+  "main.js.map": "/yt2mp3/static/js/main.aa3deec5.chunk.js.map",
+  "static/js/1.68c922ee.chunk.js": "/yt2mp3/static/js/1.68c922ee.chunk.js",
+  "static/js/1.68c922ee.chunk.js.map": "/yt2mp3/static/js/1.68c922ee.chunk.js.map",
   "runtime~main.js": "/yt2mp3/static/js/runtime~main.0ac7c442.js",
   "runtime~main.js.map": "/yt2mp3/static/js/runtime~main.0ac7c442.js.map",
-  "static/css/main.5981bc20.chunk.css.map": "/yt2mp3/static/css/main.5981bc20.chunk.css.map",
+  "static/css/main.b6480516.chunk.css.map": "/yt2mp3/static/css/main.b6480516.chunk.css.map",
   "index.html": "/yt2mp3/index.html",
-  "precache-manifest.8dac4be403d5e18ca7812305db5eb377.js": "/yt2mp3/precache-manifest.8dac4be403d5e18ca7812305db5eb377.js",
+  "precache-manifest.84c09d5af746e3807e2df24374efe52b.js": "/yt2mp3/precache-manifest.84c09d5af746e3807e2df24374efe52b.js",
   "service-worker.js": "/yt2mp3/service-worker.js"
 }
